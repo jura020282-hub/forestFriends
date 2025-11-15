@@ -1,0 +1,83 @@
+const { readFile, readdir } = require('node:fs/promises');
+const path = require('node:path');
+
+const productsTemplatePath = path.join(__dirname, './templates/products.html');
+const productCarouselSlideBtnTemplatePath = path.join(__dirname, './templates/product-carousel-slide-btn.html');
+const productCarouselItemTemplatePath = path.join(__dirname, './templates/product-carousel-item.html');
+const productTemplatePath = path.join(__dirname, './templates/product.html');
+const imagesRootDir = path.join(__dirname, '../../images/products');
+const imagesPath = './images/products'
+
+async function mapProductsTemplate(html, products) {
+  const productHTMLs = await getProductHTMLs(products);
+  const productsTemplate = await readFile(productsTemplatePath, { encoding: 'utf8' });
+  const productsHTML = productsTemplate.replaceAll('{{products}}', productHTMLs.join('\n'));
+  html = html.replaceAll('{{products.html}}', productsHTML);
+  return html;
+}
+
+async function getProductHTMLs(products) {
+  const templates = await getTemplates();
+  return Promise.all(products.map(item => getProductHTML(item, templates)));
+}
+
+async function getTemplates() {
+  const [
+    productCarouselSlideBtnTemplate,
+    productCarouselItemTemplate,
+    productTemplate
+  ] = await Promise.all([
+    readFile(productCarouselSlideBtnTemplatePath, { encoding: 'utf8' }),
+    readFile(productCarouselItemTemplatePath, { encoding: 'utf8' }),
+    readFile(productTemplatePath, { encoding: 'utf8' })
+  ]);
+  return { productCarouselSlideBtnTemplate, productCarouselItemTemplate, productTemplate };
+}
+
+async function getProductHTML(item, htmlTemplates) {
+  const { productCarouselSlideBtnTemplate, productCarouselItemTemplate, productTemplate } = htmlTemplates;
+  const carouselButtons = [];
+  const carouselItems = [];
+  const fileNames = await readdir(`${imagesRootDir}/${item.imageDir}`);
+  let imageTop = {};
+  fileNames.forEach((fileName, index) => {
+    if (index == 0) imageTop = { name: fileName, alt: getImageAlt(fileName, item.name) };
+    carouselButtons.push(getCarouselBtn(item, fileName, index, productCarouselSlideBtnTemplate));
+    carouselItems.push(getCarouselItem(item, fileName, index, productCarouselItemTemplate))
+  });
+  return productTemplate
+    .replaceAll('{{id}}', item.id)
+    .replaceAll('{{name}}', item.name)
+    .replaceAll('{{price}}', item.price)
+    .replaceAll('{{imageTop}}', getImagePath(item.imageDir, imageTop.name))
+    .replaceAll('{{imageTopAlt}}', imageTop.alt)
+    .replaceAll('{{carouselButtons}}', carouselButtons.join('\n'))
+    .replaceAll('{{carouselItems}}', carouselItems.join('\n'))
+}
+
+function getCarouselBtn(item, fileName, slide, template) {
+  return template
+    .replaceAll('{{id}}', item.id)
+    .replaceAll('{{slide}}', slide)
+    .replaceAll('{{productAriaLabel}}', `${fileName} - ${item.name}`)
+    .replaceAll('{{active}}', slide === 0 ? 'class="active" aria-current="true"' : '');
+}
+
+function getCarouselItem(item, fileName, slide, template) {
+  return template
+    .replaceAll('{{carouselItemSrc}}', getImagePath(item.imageDir, fileName))
+    .replaceAll('{{alt}}', getImageAlt(fileName, item.name))
+    .replaceAll('{{active}}', slide === 0 ? 'active' : '');
+}
+
+function getImagePath(imageDir, fileName) {
+  return `${imagesPath}/${imageDir}/${fileName}`;
+}
+
+function getImageAlt(fileName, name) {
+  return `${fileName} - ${name}`;
+}
+
+module.exports = {
+  mapProductsTemplate
+};

@@ -1,0 +1,25 @@
+{
+  "header": "Stvarajmo zajedno",
+  "intro": "Postoje mnoge varijacije odlomaka iz Lorem Ipsum-a, ali većina je pretrpjela kojekakve promjene s dodanim humorom, ili nasumičnim riječima koje nikako tu ne spadaju.",
+  "nav": {
+    "home": "Početna",
+    "products": "Sadnice",
+    "services": "Usluge",
+    "contact": "Kontakt"
+  },
+  "product": {
+    "details": "Opširnije"
+  },
+  "carousel" : {
+    "control": {
+      "prev": "Prethodna",
+      "next": "Sljedeća"
+    }
+  },
+  "services": {
+    "header": "Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji."
+  },
+  "contact": {
+    "header": "Kontakt"
+  }
+}
