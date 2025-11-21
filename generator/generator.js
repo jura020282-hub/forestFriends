@@ -62,15 +62,20 @@ async function createIndexCSS() {
 
 async function createScripts(data) {
   await createLocales(data);
-  browserifyJS();
+  await browserifyJS();
 }
 
-function browserifyJS() {
+async function browserifyJS() {
   let jsMin = browserify(scriptTemplatePath);
   if (MINIFY_JS) jsMin = jsMin.transform('@browserify/uglifyify', { global: true });
   const ws = createWriteStream(scriptPath);
   jsMin.bundle().pipe(ws);
-  ws.on('finish', () => {
-    removeCreatedLocales();
+  await new Promise((resolve, reject) => {
+    ws.on('finish', () => {
+      removeCreatedLocales();
+      resolve();
+    }).on('error', err => {
+      reject(err);
+    });
   });
 }
