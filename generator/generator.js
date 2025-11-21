@@ -11,9 +11,9 @@ const { getData } = require('./data');
 const { mapProductsTemplate } = require('./products/products');
 const { mapServicesTemplate } = require('./services/services');
 
-const MINIFY_HTML = false;
-const MINIFY_CSS = false;
-const MINIFY_JS = false;
+const MINIFY_HTML = true;
+const MINIFY_CSS = true;
+const MINIFY_JS = true;
 
 const indexHTMLTemplatePath = path.join(__dirname, './index.html');
 const indexPath = path.join(__dirname, '../index.html');

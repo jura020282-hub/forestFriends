@@ -229,6 +229,12 @@ body {
   color: var(--white-color);
 }
 
+.contact-map {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--yellow-color);
+}
+
 @media (max-width: 1366px) {
   .banner {
     min-height: 614px;
