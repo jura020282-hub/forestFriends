@@ -72,7 +72,7 @@ async function createScripts(data) {
 
 async function browserifyJS() {
   let jsMin = browserify(scriptTemplatePath);
-  if (MINIFY_JS) jsMin = jsMin.transform('@browserify/uglifyify', { global: true });
+  if (MINIFY_JS) jsMin = jsMin.transform(path.join(__dirname, './node_modules/@browserify/uglifyify'), { global: true });
   const ws = createWriteStream(scriptPath);
   jsMin.bundle().pipe(ws);
   await new Promise((resolve, reject) => {
