@@ -5,6 +5,7 @@ const enLocale = require('./en.json');
 const hrLocale = require('./hr.json');
 
 const localesDirPath = path.join(__dirname, '../js');
+const localeKeys = ['name', 'description', 'title']
 
 async function createLocales(data) {
   let en = { ...enLocale };
@@ -38,8 +39,11 @@ function getLocale(data) {
     const _hr = {};
     for (const [key, value] of Object.entries(item)) {
       if (key.startsWith('hr_')) {
-        _hr[key.split('hr_').pop()] = value;
+        const _key = key.split('hr_').pop();
+        if (!localeKeys.includes(_key)) continue;
+        _hr[_key] = value;
       } else {
+        if (!localeKeys.includes(key)) continue;
         _en[key] = value;
       }
     }

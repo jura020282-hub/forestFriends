@@ -29,80 +29,47 @@ module.exports={
   },
   "prod_chestnut": {
     "name": "chestnut",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "chestnut",
-    "id": "prod_chestnut"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_oak": {
     "name": "oak",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "oak",
-    "id": "prod_oak"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_1chestnut": {
     "name": "chestnut",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "chestnut",
-    "id": "prod_1chestnut"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_1oak": {
     "name": "oak",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "oak",
-    "id": "prod_1oak"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_2chestnut": {
     "name": "chestnut",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
-    "imageDir": "chestnut",
-    "id": "prod_2chestnut"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "ser_planting": {
     "name": "Planting",
-    "description": "Planting all types of seedlings, with our or your seedlings.",
-    "imageName": "service1.png",
-    "id": "ser_planting",
-    "imageAlt": "service1.png - Planting"
+    "description": "Planting all types of seedlings, with our or your seedlings."
   },
   "ser_mulching": {
     "name": "Mulching",
-    "description": "Mulching all types of terrain.",
-    "imageName": "service2.png",
-    "id": "ser_mulching",
-    "imageAlt": "service2.png - Mulching"
+    "description": "Mulching all types of terrain."
   },
   "ser_mowing": {
     "name": "Mowing",
-    "description": "Mowing meadows and lawns.",
-    "imageName": "service3.png",
-    "id": "ser_mowing",
-    "imageAlt": "service3.png - Mowing"
+    "description": "Mowing meadows and lawns."
   },
   "about_we plant": {
     "title": "We plant",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
-    "imageName": "plant.png",
-    "id": "about_we plant",
-    "imageAlt": "plant.png - We plant"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti."
   },
   "about_we bathe": {
     "title": "We bathe",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
-    "imageName": "bathe.jpg",
-    "id": "about_we bathe",
-    "imageAlt": "bathe.jpg - We bathe"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti."
   },
   "about_we clean": {
     "title": "We clean",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
-    "imageName": "clean.jpg",
-    "id": "about_we clean",
-    "imageAlt": "clean.jpg - We clean"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti."
   }
 }
 },{}],2:[function(require,module,exports){
@@ -136,80 +103,47 @@ module.exports={
   },
   "prod_chestnut": {
     "name": "Kesten",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "chestnut",
-    "id": "prod_chestnut"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_oak": {
     "name": "Hrast",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "oak",
-    "id": "prod_oak"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_1chestnut": {
     "name": "Kesten",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "chestnut",
-    "id": "prod_1chestnut"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_1oak": {
     "name": "Hrast",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
-    "imageDir": "oak",
-    "id": "prod_1oak"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "prod_2chestnut": {
     "name": "Kesten",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
-    "imageDir": "chestnut",
-    "id": "prod_2chestnut"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus."
   },
   "ser_planting": {
     "name": "Sadnja",
-    "description": "Sadnja svih vrsta sadnica, s nasim ili vasim sadnicama.",
-    "imageName": "service1.png",
-    "id": "ser_planting",
-    "imageAlt": "service1.png - Planting"
+    "description": "Sadnja svih vrsta sadnica, s nasim ili vasim sadnicama."
   },
   "ser_mulching": {
     "name": "Malčiranje",
-    "description": "Malčiranje svih vrsta terena.",
-    "imageName": "service2.png",
-    "id": "ser_mulching",
-    "imageAlt": "service2.png - Mulching"
+    "description": "Malčiranje svih vrsta terena."
   },
   "ser_mowing": {
     "name": "Košnja",
-    "description": "Košnja livada i travnjaka.",
-    "imageName": "service3.png",
-    "id": "ser_mowing",
-    "imageAlt": "service3.png - Mowing"
+    "description": "Košnja livada i travnjaka."
   },
   "about_we plant": {
     "title": "Sadimo",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
-    "imageName": "plant.png",
-    "id": "about_we plant",
-    "imageAlt": "plant.png - We plant"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti."
   },
   "about_we bathe": {
     "title": "Kopamo",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
-    "imageName": "bathe.jpg",
-    "id": "about_we bathe",
-    "imageAlt": "bathe.jpg - We bathe"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti."
   },
   "about_we clean": {
     "title": "Cistimo",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
-    "imageName": "clean.jpg",
-    "id": "about_we clean",
-    "imageAlt": "clean.jpg - We clean"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti."
   }
 }
 },{}],3:[function(require,module,exports){
