@@ -6,4 +6,3 @@ git add -A
 git commit -m "$desc"
 git pull --rebase
 git push
-cd ..

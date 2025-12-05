@@ -58,7 +58,7 @@ module.exports={
   "prod_2chestnut": {
     "name": "chestnut",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
+    "price": "10.00",
     "imageDir": "chestnut",
     "id": "prod_2chestnut"
   },
@@ -165,7 +165,7 @@ module.exports={
   "prod_2chestnut": {
     "name": "Kesten",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "0.00",
+    "price": "10.00",
     "imageDir": "chestnut",
     "id": "prod_2chestnut"
   },
