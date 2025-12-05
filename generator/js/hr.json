@@ -1,0 +1,106 @@
+{
+  "header": "Stvarajmo zajedno",
+  "intro": "Postoje mnoge varijacije odlomaka iz Lorem Ipsum-a, ali većina je pretrpjela kojekakve promjene s dodanim humorom, ili nasumičnim riječima koje nikako tu ne spadaju.",
+  "nav": {
+    "home": "Početna",
+    "products": "Sadnice",
+    "services": "Usluge",
+    "about": "O nama",
+    "contact": "Kontakt"
+  },
+  "product": {
+    "details": "Opširnije"
+  },
+  "carousel": {
+    "control": {
+      "prev": "Prethodna",
+      "next": "Sljedeća"
+    }
+  },
+  "services": {
+    "header": "Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji."
+  },
+  "contact": {
+    "header": "Kontakt"
+  },
+  "about": {
+    "header": "O nama"
+  },
+  "prod_chestnut": {
+    "name": "Kesten",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+    "price": "0.00",
+    "imageDir": "chestnut",
+    "id": "prod_chestnut"
+  },
+  "prod_oak": {
+    "name": "Hrast",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+    "price": "0.00",
+    "imageDir": "oak",
+    "id": "prod_oak"
+  },
+  "prod_1chestnut": {
+    "name": "Kesten",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+    "price": "0.00",
+    "imageDir": "chestnut",
+    "id": "prod_1chestnut"
+  },
+  "prod_1oak": {
+    "name": "Hrast",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+    "price": "0.00",
+    "imageDir": "oak",
+    "id": "prod_1oak"
+  },
+  "prod_2chestnut": {
+    "name": "Kesten",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+    "price": "0.00",
+    "imageDir": "chestnut",
+    "id": "prod_2chestnut"
+  },
+  "ser_planting": {
+    "name": "Sadnja",
+    "description": "Sadnja svih vrsta sadnica, s nasim ili vasim sadnicama.",
+    "imageName": "service1.png",
+    "id": "ser_planting",
+    "imageAlt": "service1.png - Planting"
+  },
+  "ser_mulching": {
+    "name": "Malčiranje",
+    "description": "Malčiranje svih vrsta terena.",
+    "imageName": "service2.png",
+    "id": "ser_mulching",
+    "imageAlt": "service2.png - Mulching"
+  },
+  "ser_mowing": {
+    "name": "Košnja",
+    "description": "Košnja livada i travnjaka.",
+    "imageName": "service3.png",
+    "id": "ser_mowing",
+    "imageAlt": "service3.png - Mowing"
+  },
+  "about_we plant": {
+    "title": "Sadimo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "plant.png",
+    "id": "about_we plant",
+    "imageAlt": "plant.png - We plant"
+  },
+  "about_we bathe": {
+    "title": "Kopamo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "bathe.jpg",
+    "id": "about_we bathe",
+    "imageAlt": "bathe.jpg - We bathe"
+  },
+  "about_we clean": {
+    "title": "Cistimo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "clean.jpg",
+    "id": "about_we clean",
+    "imageAlt": "clean.jpg - We clean"
+  }
+}
