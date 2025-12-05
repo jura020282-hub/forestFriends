@@ -5,6 +5,7 @@
     "home": "Home",
     "products": "Plants",
     "services": "Services",
+    "about": "About Us",
     "contact": "Contact"
   },
   "product": {
@@ -21,5 +22,8 @@
   },
   "contact": {
     "header": "Contact"
+  },
+  "about": {
+    "header": "About Us"
   }
 }

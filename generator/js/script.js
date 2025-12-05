@@ -50,5 +50,5 @@ function changeLocale(locale, i18next) {
 $(function () {
   i18nInit();
   carouselFix();
-  $(".nav-link").on( "click", () => $("#navbarCollapse").collapse('hide'));
+  $(".nav-link").on("click", () => $("#navbarCollapse").collapse('hide'));
 });

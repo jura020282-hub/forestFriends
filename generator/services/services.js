@@ -15,7 +15,7 @@ async function mapServicesTemplate(html, services) {
 
 async function getServiceHTMLs(services) {
   const templates = await getTemplates();
-  return Promise.all(services.map(item => getServiceHTML(item, templates)));
+  return services.map(item => getServiceHTML(item, templates));
 }
 
 async function getTemplates() {
@@ -27,7 +27,7 @@ async function getTemplates() {
   return { serviceTemplate };
 }
 
-async function getServiceHTML(item, htmlTemplates) {
+function getServiceHTML(item, htmlTemplates) {
   const { serviceTemplate } = htmlTemplates;
   return serviceTemplate
     .replaceAll('{{id}}', item.id)
@@ -44,4 +44,3 @@ function getImagePath(name) {
 module.exports = {
   mapServicesTemplate
 };
-

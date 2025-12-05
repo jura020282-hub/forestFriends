@@ -1,4 +1,4 @@
-<div class="bg-light contact" id="contact">
+<div class="contact" id="contact">
   <div class="container">
     <h3 class="contact-header" data-i18n="contact.header">CONTACT</h3>
     <div class="row justify-content-center">
@@ -6,24 +6,24 @@
         <div class="contact-item">
           <p>
             <svg class="bi bi-telephone-fill contact-item-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>
-            +385 99 111 2222
+            <a href="tel:{{number}}">{{number}}</a>
           </p>
         </div>
         <div class="contact-item">
           <p>
             <svg class="bi bi-envelope-fill contact-item-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></svg>
-            <a href="mailto:forestFriends@gmail.com">forestFriends@gmail.com</a>
+            <a href="mailto:{{mail}}">{{mail}}</a>
           </p>
         </div>
         <div class="contact-item">
           <p>
             <svg class="bi bi-geo-alt-fill contact-item-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg>
-            Pakrani 2, 43500, Pakrani
+            <a target="_blank"  href="{{mapUrl}}">{{address}}</a>
           </p>
         </div>
       </div>
       <div class="col-md-6 col-sm-12 contact-right">
-        <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.275913568192!2d17.26767757661077!3d45.564889826714285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47679ebf8fc10109%3A0x9052e1430e366197!2sPakrani%202%2C%2043500%2C%20Pakrani!5e0!3m2!1sen!2shr!4v1763654461527!5m2!1sen!2shr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        {{mapIframe}}
       </div>
     </div>
   </div>

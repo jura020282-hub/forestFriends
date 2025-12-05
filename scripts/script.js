@@ -6,6 +6,7 @@ module.exports={
     "home": "Home",
     "products": "Plants",
     "services": "Services",
+    "about": "About Us",
     "contact": "Contact"
   },
   "product": {
@@ -23,38 +24,41 @@ module.exports={
   "contact": {
     "header": "Contact"
   },
+  "about": {
+    "header": "About Us"
+  },
   "prod_chestnut": {
     "name": "chestnut",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
+    "price": "0.00",
     "imageDir": "chestnut",
     "id": "prod_chestnut"
   },
   "prod_oak": {
     "name": "oak",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "15.00",
+    "price": "0.00",
     "imageDir": "oak",
     "id": "prod_oak"
   },
   "prod_1chestnut": {
     "name": "chestnut",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
+    "price": "0.00",
     "imageDir": "chestnut",
     "id": "prod_1chestnut"
   },
   "prod_1oak": {
     "name": "oak",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "15.00",
+    "price": "0.00",
     "imageDir": "oak",
     "id": "prod_1oak"
   },
   "prod_2chestnut": {
     "name": "chestnut",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
+    "price": "0.00",
     "imageDir": "chestnut",
     "id": "prod_2chestnut"
   },
@@ -78,6 +82,27 @@ module.exports={
     "imageName": "service3.png",
     "id": "ser_mowing",
     "imageAlt": "service3.png - Mowing"
+  },
+  "about_we plant": {
+    "title": "We plant",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "plant.png",
+    "id": "about_we plant",
+    "imageAlt": "plant.png - We plant"
+  },
+  "about_we bathe": {
+    "title": "We bathe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "bathe.jpg",
+    "id": "about_we bathe",
+    "imageAlt": "bathe.jpg - We bathe"
+  },
+  "about_we clean": {
+    "title": "We clean",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "clean.jpg",
+    "id": "about_we clean",
+    "imageAlt": "clean.jpg - We clean"
   }
 }
 },{}],2:[function(require,module,exports){
@@ -88,6 +113,7 @@ module.exports={
     "home": "Početna",
     "products": "Sadnice",
     "services": "Usluge",
+    "about": "O nama",
     "contact": "Kontakt"
   },
   "product": {
@@ -105,38 +131,41 @@ module.exports={
   "contact": {
     "header": "Kontakt"
   },
+  "about": {
+    "header": "O nama"
+  },
   "prod_chestnut": {
     "name": "Kesten",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
+    "price": "0.00",
     "imageDir": "chestnut",
     "id": "prod_chestnut"
   },
   "prod_oak": {
     "name": "Hrast",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "15.00",
+    "price": "0.00",
     "imageDir": "oak",
     "id": "prod_oak"
   },
   "prod_1chestnut": {
     "name": "Kesten",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
+    "price": "0.00",
     "imageDir": "chestnut",
     "id": "prod_1chestnut"
   },
   "prod_1oak": {
     "name": "Hrast",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "15.00",
+    "price": "0.00",
     "imageDir": "oak",
     "id": "prod_1oak"
   },
   "prod_2chestnut": {
     "name": "Kesten",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia justo sit amet ullamcorper pretium. Vestibulum at dapibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-    "price": "10.00",
+    "price": "0.00",
     "imageDir": "chestnut",
     "id": "prod_2chestnut"
   },
@@ -160,6 +189,27 @@ module.exports={
     "imageName": "service3.png",
     "id": "ser_mowing",
     "imageAlt": "service3.png - Mowing"
+  },
+  "about_we plant": {
+    "title": "Sadimo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "plant.png",
+    "id": "about_we plant",
+    "imageAlt": "plant.png - We plant"
+  },
+  "about_we bathe": {
+    "title": "Kopamo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "bathe.jpg",
+    "id": "about_we bathe",
+    "imageAlt": "bathe.jpg - We bathe"
+  },
+  "about_we clean": {
+    "title": "Cistimo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tellus facilisis, consectetur arcu molestie, posuere nibh. Aliquam pretium ante at libero ultrices congue. Nulla vitae volutpat nisl. Donec consequat risus eget dictum ornare. Etiam hendrerit ipsum lectus, ut venenatis purus placerat dignissim. Sed ut quam in purus tempor aliquet. Integer egestas, augue at tincidunt dignissim, sem libero tristique libero, at tincidunt nulla tortor et mauris. Nullam porttitor eu eros non consectetur. Maecenas et condimentum urna. Vestibulum malesuada accumsan ipsum, sit amet consequat mauris vehicula non. Curabitur ut blandit est. Suspendisse potenti.",
+    "imageName": "clean.jpg",
+    "id": "about_we clean",
+    "imageAlt": "clean.jpg - We clean"
   }
 }
 },{}],3:[function(require,module,exports){

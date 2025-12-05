@@ -10,6 +10,8 @@ const { createLocales, removeCreatedLocales } = require('./locales/locales');
 const { getData } = require('./data');
 const { mapProductsTemplate } = require('./products/products');
 const { mapServicesTemplate } = require('./services/services');
+const { mapContactTemplate } = require('./contact/contact');
+const { mapAboutTemplate } = require('./about/about');
 
 const MINIFY_HTML = true;
 const MINIFY_CSS = true;
@@ -34,11 +36,13 @@ const cssIndexPath = path.join(__dirname, '../css/index.css');
 })();
 
 async function createIndexHTML(data) {
-  const { products, services } = data;
+  const { contact, products, services, about } = data;
   const indexHTMLTemplate = await readFile(indexHTMLTemplatePath, { encoding: 'utf8' });
   let indexHTML = await mapCommonTemplates(indexHTMLTemplate);
+  indexHTML = await mapContactTemplate(indexHTML, contact);
   indexHTML = await mapProductsTemplate(indexHTML, products);
   indexHTML = await mapServicesTemplate(indexHTML, services);
+  indexHTML = await mapAboutTemplate(indexHTML, about);
   await writeFile(indexPath, pretty(MINIFY_HTML ? minifyHTML(indexHTML) : indexHTML));
 }
 
@@ -61,7 +65,8 @@ async function createIndexCSS() {
 }
 
 async function createScripts(data) {
-  await createLocales(data);
+  const { contact, ...rest } = data;
+  await createLocales(rest);
   await browserifyJS();
 }
 

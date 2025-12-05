@@ -41,32 +41,34 @@ async function getProductHTML(item, htmlTemplates) {
   const fileNames = await readdir(`${imagesRootDir}/${item.imageDir}`);
   let imageTop = {};
   fileNames.forEach((fileName, index) => {
-    if (index == 0) imageTop = { name: fileName, alt: getImageAlt(fileName, item.name) };
-    carouselButtons.push(getCarouselBtn(item, fileName, index, productCarouselSlideBtnTemplate));
-    carouselItems.push(getCarouselItem(item, fileName, index, productCarouselItemTemplate))
+    const alt = getImageAlt(fileName, item.name);
+    const imagePath = getImagePath(item.imageDir, fileName);
+    if (index == 0) imageTop = { imagePath, alt };
+    carouselButtons.push(getCarouselBtn(item, alt, index, productCarouselSlideBtnTemplate));
+    carouselItems.push(getCarouselItem(imagePath, alt, index, productCarouselItemTemplate))
   });
   return productTemplate
     .replaceAll('{{id}}', item.id)
     .replaceAll('{{name}}', item.name)
     .replaceAll('{{price}}', item.price)
-    .replaceAll('{{imageTop}}', getImagePath(item.imageDir, imageTop.name))
+    .replaceAll('{{imageTop}}', imageTop.imagePath)
     .replaceAll('{{imageTopAlt}}', imageTop.alt)
     .replaceAll('{{carouselButtons}}', carouselButtons.join('\n'))
     .replaceAll('{{carouselItems}}', carouselItems.join('\n'))
 }
 
-function getCarouselBtn(item, fileName, slide, template) {
+function getCarouselBtn(item, productAriaLabel, slide, template) {
   return template
     .replaceAll('{{id}}', item.id)
     .replaceAll('{{slide}}', slide)
-    .replaceAll('{{productAriaLabel}}', `${fileName} - ${item.name}`)
+    .replaceAll('{{productAriaLabel}}', productAriaLabel)
     .replaceAll('{{active}}', slide === 0 ? 'class="active" aria-current="true"' : '');
 }
 
-function getCarouselItem(item, fileName, slide, template) {
+function getCarouselItem(imagePath, alt, slide, template) {
   return template
-    .replaceAll('{{carouselItemSrc}}', getImagePath(item.imageDir, fileName))
-    .replaceAll('{{alt}}', getImageAlt(fileName, item.name))
+    .replaceAll('{{carouselItemSrc}}', imagePath)
+    .replaceAll('{{alt}}', alt)
     .replaceAll('{{active}}', slide === 0 ? 'active' : '');
 }
 

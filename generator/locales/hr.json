@@ -5,6 +5,7 @@
     "home": "Početna",
     "products": "Sadnice",
     "services": "Usluge",
+    "about": "O nama",
     "contact": "Kontakt"
   },
   "product": {
@@ -21,5 +22,8 @@
   },
   "contact": {
     "header": "Kontakt"
+  },
+  "about": {
+    "header": "O nama"
   }
 }
