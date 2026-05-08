@@ -49,8 +49,8 @@ function getBtn(item, slide, template) {
 function getItem(item, slide, template) {
   return template
     .replaceAll('{{id}}', item.id)
-    .replaceAll('{{title}}', item.title)
-    .replaceAll('{{description}}', item.description)
+    .replaceAll('{{title}}', item.hr_title)
+    .replaceAll('{{description}}', item.hr_description)
     .replaceAll('{{image}}', getImagePath(item.imageName))
     .replaceAll('{{alt}}', item.imageAlt)
     .replaceAll('{{active}}', slide === 0 ? 'active' : '')

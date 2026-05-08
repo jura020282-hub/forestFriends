@@ -43,12 +43,24 @@ function rerender(locale) {
 function changeLocale(locale, i18next) {
   i18next.changeLanguage(locale, () => {
     rerender(locale);
+    document.documentElement.lang = locale;
     localStorage.setItem('i18nextLng', locale)
+  });
+}
+
+function galleryInit() {
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    autoplayVideos: true
   });
 }
 
 $(function () {
   i18nInit();
   carouselFix();
+  galleryInit();
   $(".nav-link").on("click", () => $("#navbarCollapse").collapse('hide'));
 });

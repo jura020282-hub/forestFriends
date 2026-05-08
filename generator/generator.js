@@ -12,6 +12,7 @@ const { mapProductsTemplate } = require('./products/products');
 const { mapServicesTemplate } = require('./services/services');
 const { mapContactTemplate } = require('./contact/contact');
 const { mapAboutTemplate } = require('./about/about');
+const { mapGalleryTemplate } = require('./gallery/gallery');
 
 const MINIFY_HTML = true;
 const MINIFY_CSS = true;
@@ -43,6 +44,7 @@ async function createIndexHTML(data) {
   indexHTML = await mapProductsTemplate(indexHTML, products);
   indexHTML = await mapServicesTemplate(indexHTML, services);
   indexHTML = await mapAboutTemplate(indexHTML, about);
+  indexHTML = await mapGalleryTemplate(indexHTML);
   await writeFile(indexPath, pretty(MINIFY_HTML ? minifyHTML(indexHTML) : indexHTML));
 }
 

@@ -1,5 +1,6 @@
 const path = require('node:path');
 const XLSX = require("xlsx");
+const { v4: uuidv4 } = require('uuid');
 
 const dataPath = path.join(__dirname, '../data.xlsx');
 const contactWorksheetName = 'contact';
@@ -32,15 +33,11 @@ function getData() {
 function prepareProductsData(products) {
   const nameCounterMap = {};
   return products.map(item => {
-    const nameLC = item.name.toString().trim().toLowerCase();
-    const nameCounter = nameCounterMap[nameLC];
-    if (!nameCounter) nameCounterMap[nameLC] = 1;
-    else nameCounterMap[nameLC]++;
     let parsedPrice = parseFloat(item.price);
     return {
       ...item,
-      id: getId('prod', nameCounter, nameLC),
-      price: isNaN(parsedPrice) ? '--' : parsedPrice.toFixed(2)
+      id: uuidv4(),
+      price: isNaN(parsedPrice) ? undefined : parsedPrice.toFixed(2)
     }
   });
 }
@@ -48,14 +45,10 @@ function prepareProductsData(products) {
 function prepareServicesData(services) {
   const nameCounterMap = {};
   return services.map(item => {
-    const nameLC = item.name.toString().trim().toLowerCase();
-    const nameCounter = nameCounterMap[nameLC];
-    if (!nameCounter) nameCounterMap[nameLC] = 1;
-    else nameCounterMap[nameLC]++;
     return {
       ...item,
-      id: getId('ser', nameCounter, nameLC),
-      imageAlt: `${item.imageName} - ${item.name}`
+      id: uuidv4(),
+      imageAlt: `${item.imageName} - ${item.hr_name}`
     }
   });
 }
@@ -63,21 +56,12 @@ function prepareServicesData(services) {
 function prepareAboutData(about) {
   const titleCounterMap = {};
   return about.map(item => {
-    const titleLC = item.title.toString().trim().toLowerCase();
-    const nameCounter = titleCounterMap[titleLC];
-    if (!nameCounter) titleCounterMap[titleLC] = 1;
-    else titleCounterMap[titleLC]++;
     return {
       ...item,
-      id: getId('about', nameCounter, titleLC),
-      imageAlt: `${item.imageName} - ${item.title}`
+      id: uuidv4(),
+      imageAlt: `${item.imageName} - ${item.hr_title}`
     }
   });
-}
-
-function getId(prefix, nameCounter, nameLC) {
-  const suffix = nameCounter ? `${nameCounter}${nameLC}` : nameLC;
-  return `${prefix}_${suffix}`;
 }
 
 module.exports = {

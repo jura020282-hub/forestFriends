@@ -6,24 +6,17 @@
     "products": "Plants",
     "services": "Services",
     "about": "About Us",
+    "gallery": "Gallery",
     "contact": "Contact"
   },
   "product": {
-    "details": "Details"
+    "details": "Details",
+    "priceOnRequest": "Price on request"
   },
   "carousel" : {
     "control": {
       "prev": "Previous",
       "next": "Next"
     }
-  },
-  "services": {
-    "header": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-  },
-  "contact": {
-    "header": "Contact"
-  },
-  "about": {
-    "header": "About Us"
   }
 }

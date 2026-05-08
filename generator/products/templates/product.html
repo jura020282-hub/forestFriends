@@ -3,8 +3,8 @@
     <img loading="lazy" class="card-img-top" alt="{{imageTopAlt}}" src="{{imageTop}}">
     <div class="card-body">
       <h4 class="card-text" data-i18n="{{id}}.name">{{name}}</h4>
-      <h4 class="card-text card-price"><b>{{price}} &euro;</b></h4>
-      <button type="button" class="btn btn-brown btn-product-details" data-i18n="product.details" data-bs-toggle="modal" data-bs-target="#modal-product-{{id}}">Details</button>
+      {{price.html}}
+      <button type="button" class="btn btn-brown btn-product-details" data-i18n="product.details" data-bs-toggle="modal" data-bs-target="#modal-product-{{id}}">Opširnije</button>
     </div>
   </div>
   <div class="modal fade" id="modal-product-{{id}}" tabindex="-1" aria-labelledby="modal-product-{{id}}Label" aria-hidden="true">
@@ -24,17 +24,17 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product-{{id}}" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden" data-i18n="carousel.control.prev">Previous</span>
+              <span class="visually-hidden" data-i18n="carousel.control.prev">Prethodna</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-product-{{id}}" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden" data-i18n="carousel.control.next">Next</span>
+              <span class="visually-hidden" data-i18n="carousel.control.next">Sljedeća</span>
             </button>
           </div>
-          <p class="preview-product-description" data-i18n="{{id}}.description">{{description}}</p>
+          <div class="preview-product-description" data-i18n="{{id}}.description">{{description}}</div>
         </div>
         <div class="modal-footer preview-product-footer">
-          <h4 class="card-text card-price"><b>{{price}} &euro;</b></h4>
+           {{price.html}}
         </div>
         <div class="modal-footer preview-product-footer preview-product-footer-closeBtn" data-bs-dismiss="modal">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

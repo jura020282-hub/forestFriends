@@ -5,6 +5,8 @@ const productsTemplatePath = path.join(__dirname, './templates/products.html');
 const productCarouselSlideBtnTemplatePath = path.join(__dirname, './templates/product-carousel-slide-btn.html');
 const productCarouselItemTemplatePath = path.join(__dirname, './templates/product-carousel-item.html');
 const productTemplatePath = path.join(__dirname, './templates/product.html');
+const priceOnReqTemplatePath = path.join(__dirname, './templates/price-on-req.html');
+const priceTemplatePath = path.join(__dirname, './templates/price.html');
 const imagesRootDir = path.join(__dirname, '../../images/products');
 const imagesPath = './images/products'
 
@@ -25,32 +27,38 @@ async function getTemplates() {
   const [
     productCarouselSlideBtnTemplate,
     productCarouselItemTemplate,
-    productTemplate
+    productTemplate,
+    priceOnReqTemplate,
+    priceTemplate
   ] = await Promise.all([
     readFile(productCarouselSlideBtnTemplatePath, { encoding: 'utf8' }),
     readFile(productCarouselItemTemplatePath, { encoding: 'utf8' }),
-    readFile(productTemplatePath, { encoding: 'utf8' })
+    readFile(productTemplatePath, { encoding: 'utf8' }),
+    readFile(priceOnReqTemplatePath, { encoding: 'utf8' }),
+    readFile(priceTemplatePath, { encoding: 'utf8' })
   ]);
-  return { productCarouselSlideBtnTemplate, productCarouselItemTemplate, productTemplate };
+  return { productCarouselSlideBtnTemplate, productCarouselItemTemplate, productTemplate, priceOnReqTemplate, priceTemplate };
 }
 
 async function getProductHTML(item, htmlTemplates) {
-  const { productCarouselSlideBtnTemplate, productCarouselItemTemplate, productTemplate } = htmlTemplates;
+  const { productCarouselSlideBtnTemplate, productCarouselItemTemplate, productTemplate, priceOnReqTemplate, priceTemplate } = htmlTemplates;
   const carouselButtons = [];
   const carouselItems = [];
   const fileNames = await readdir(`${imagesRootDir}/${item.imageDir}`);
   let imageTop = {};
   fileNames.forEach((fileName, index) => {
-    const alt = getImageAlt(fileName, item.name);
+    const alt = getImageAlt(fileName, item.hr_name);
     const imagePath = getImagePath(item.imageDir, fileName);
     if (index == 0) imageTop = { imagePath, alt };
     carouselButtons.push(getCarouselBtn(item, alt, index, productCarouselSlideBtnTemplate));
     carouselItems.push(getCarouselItem(imagePath, alt, index, productCarouselItemTemplate))
   });
+  const priceHtml = item.price ? priceTemplate.replaceAll('{{price}}', item.price) : priceOnReqTemplate;
   return productTemplate
     .replaceAll('{{id}}', item.id)
-    .replaceAll('{{name}}', item.name)
-    .replaceAll('{{price}}', item.price)
+    .replaceAll('{{name}}', item.hr_name)
+    .replaceAll('{{description}}', item.hr_description)
+    .replaceAll('{{price.html}}', priceHtml)
     .replaceAll('{{imageTop}}', imageTop.imagePath)
     .replaceAll('{{imageTopAlt}}', imageTop.alt)
     .replaceAll('{{carouselButtons}}', carouselButtons.join('\n'))
