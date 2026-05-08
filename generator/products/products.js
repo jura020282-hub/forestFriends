@@ -85,7 +85,7 @@ function getImagePath(imageDir, fileName) {
 }
 
 function getImageAlt(fileName, name) {
-  return `${fileName} - ${name}`;
+  return `${name} | ${fileName}`;
 }
 
 module.exports = {
