@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rasadnik-bernat.com/sitemap.xml
+Sitemap: https://rasadnik-bernat.hr/sitemap.xml
