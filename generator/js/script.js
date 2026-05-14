@@ -1,9 +1,32 @@
 const en = require('./en.json');
 const hr = require('./hr.json');
 
-function carouselFix() {
-  $('.carousel').each(function (i, x) {
-    new bootstrap.Carousel(x);
+function carouselInit() {
+  document.querySelectorAll('.carousel')
+    .forEach(el => new bootstrap.Carousel(el));
+}
+
+function translatePage() {
+  document.querySelectorAll('[data-i18n]')
+    .forEach(el => {
+      const key = el.dataset.i18n;
+      el.innerHTML = i18next.t(key);
+    });
+}
+
+function rerender(locale) {
+  document.querySelectorAll('.nav-link-language-active')
+    .forEach(el => el.classList.remove('nav-link-language-active'));
+  const activeButton = document.getElementById(locale);
+  if (activeButton) activeButton.classList.add('nav-link-language-active');
+  document.documentElement.lang = locale;
+  translatePage();
+}
+
+function changeLocale(locale) {
+  i18next.changeLanguage(locale, () => {
+    rerender(locale);
+    localStorage.setItem('i18nextLng', locale);
   });
 }
 
@@ -12,7 +35,9 @@ function i18nInit() {
     .use(i18nextBrowserLanguageDetector)
     .init({
       debug: true,
-      fallbackLng: 'en',
+      fallbackLng: 'hr',
+      supportedLngs: ['en', 'hr'],
+      load: 'languageOnly',
       resources: {
         en: {
           translation: en
@@ -21,35 +46,16 @@ function i18nInit() {
           translation: hr
         }
       }
-    }, (err, t) => {
+    }, (err) => {
       if (err) return console.error(err);
-      jqueryI18next.init(i18next, $, { useOptionsAttr: true });
-
-      $(`#${i18next.resolvedLanguage}`).addClass('nav-link-language-active');
-
-      $("#hr").on("click", () => changeLocale('hr', i18next));
-      $("#en").on("click", () => changeLocale('en', i18next));
-
+      document.getElementById('hr')?.addEventListener('click', () => changeLocale('hr'));
+      document.getElementById('en')?.addEventListener('click', () => changeLocale('en'));
       rerender(i18next.resolvedLanguage);
     });
 }
 
-function rerender(locale) {
-  $('.nav-link-language-active').removeClass('nav-link-language-active');
-  $(`#${locale}`).addClass('nav-link-language-active');
-  $('body').localize();
-}
-
-function changeLocale(locale, i18next) {
-  i18next.changeLanguage(locale, () => {
-    rerender(locale);
-    document.documentElement.lang = locale;
-    localStorage.setItem('i18nextLng', locale)
-  });
-}
-
 function galleryInit() {
-  const lightbox = GLightbox({
+  GLightbox({
     selector: '.glightbox',
     touchNavigation: true,
     loop: true,
@@ -58,9 +64,20 @@ function galleryInit() {
   });
 }
 
-$(function () {
+function navbarInit() {
+  const navbarCollapse = document.getElementById('navbarCollapse');
+  const collapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false });
+  document.querySelectorAll('.nav-link, .navbar-brand')
+    .forEach(el => {
+      el.addEventListener('click', () => {
+        collapse.hide();
+      });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
   i18nInit();
-  carouselFix();
+  carouselInit();
   galleryInit();
-  $(".nav-link").on("click", () => $("#navbarCollapse").collapse('hide'));
+  navbarInit();
 });

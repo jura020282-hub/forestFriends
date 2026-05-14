@@ -46,13 +46,19 @@ async function getProductHTML(item, htmlTemplates) {
   const carouselItems = [];
   const fileNames = await readdir(`${imagesRootDir}/${item.imageDir}`);
   let imageTop = {};
-  fileNames.forEach((fileName, index) => {
-    const alt = getImageAlt(fileName, item.hr_name);
-    const imagePath = getImagePath(item.imageDir, fileName);
-    if (index == 0) imageTop = { imagePath, alt };
-    carouselButtons.push(getCarouselBtn(item, alt, index, productCarouselSlideBtnTemplate));
-    carouselItems.push(getCarouselItem(imagePath, alt, index, productCarouselItemTemplate))
-  });
+  if (fileNames.length > 0) {
+    fileNames.forEach((fileName, index) => {
+      const alt = getImageAlt(fileName, item.hr_name);
+      const imagePath = getImagePath(item.imageDir, fileName);
+      if (index == 0) imageTop = { imagePath, alt };
+      carouselButtons.push(getCarouselBtn(item, alt, index, productCarouselSlideBtnTemplate));
+      carouselItems.push(getCarouselItem(imagePath, alt, index, productCarouselItemTemplate))
+    });
+  } else {
+    imageTop = { imagePath: './images/nema-slike.png', alt: item.hr_name };
+    carouselButtons.push(getCarouselBtn(item, imageTop.alt, 0, productCarouselSlideBtnTemplate));
+    carouselItems.push(getCarouselItem(imageTop.imagePath, imageTop.alt, 0, productCarouselItemTemplate))
+  }
   const priceHtml = item.price ? priceTemplate.replaceAll('{{price}}', item.price) : priceOnReqTemplate;
   return productTemplate
     .replaceAll('{{id}}', item.id)
